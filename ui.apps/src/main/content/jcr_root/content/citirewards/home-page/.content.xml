@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2018-04-22T20:27:43.230+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/citirewards/settings/wcm/templates/home-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Home Page"
+        sling:resourceType="citirewards/components/structure/page">
+        <root jcr:primaryType="nt:unstructured">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <travel
+                    jcr:created="{Date}2018-04-18T21:59:53.445+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-04-18T21:59:53.445+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="citirewards/components/content/travel"/>
+                <touchmulti
+                    jcr:created="{Date}2018-04-22T19:10:38.300+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2018-04-22T20:27:43.224+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="citirewards/components/content/touchmulti"
+                    fileReference="/content/dam/citirewards/img/unitedstates/bigscreen.jpg">
+                    <products jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            imagepath="/content/dam/citi/img/tablet.png"
+                            link="#"
+                            product="Home"
+                            show="yes"
+                            size="small"
+                            startDate="{Date}2018-04-22T19:11:00.000+05:30"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            imagepath="/content/dam/citi/img/ring.png"
+                            link="#"
+                            product="Electronics"
+                            show="yes"
+                            size="small"
+                            startDate="{Date}2018-04-22T19:26:00.000+05:30"/>
+                    </products>
+                </touchmulti>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>
