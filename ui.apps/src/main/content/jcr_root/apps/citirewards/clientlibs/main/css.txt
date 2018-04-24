@@ -1,6 +1,6 @@
 #base=.
 
-style/grid.css
-style/english_unitedstates.css
-style/malaysia/malaysia.css
-style/global-v2.css
+css/grid.css
+css/english_unitedstates.css
+css/malaysia/malaysia.css
+css/global-v2.css

@@ -1,5 +1,6 @@
 #base=.
 
-source/lib.js
-source/global-v2.js
-source/malaysia/citi-malaysia.js
+js/modernizr-custom.js
+js/lib.js
+js/global-v2.js
+js/malaysia/citi-malaysia.js
