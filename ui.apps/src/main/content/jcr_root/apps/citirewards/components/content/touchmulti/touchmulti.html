@@ -1,10 +1,14 @@
-<div data-sly-use.multiItems="com.epsilon.aem.citirewards.core.TouchMultiComponent">
-<div data-sly-list.head="${multiItems.multiFieldItems}">
-
-	<div class="grid-container slider-module slider-home-product slider-no-dots-padding" data-slick="">
-		<a data-modal="" data-card-title="" data-card-image="${head.image}" class="grid-25 grid-mobile-50 shop-category omniture-slider-item" href="${head.link}"> <img class="slider-img" src="${head.image}" alt="" /> <span class="slider-category">${head.product}</span> </a>
-
-	</div>
-</div>
-</div>
-
+<section id="shop" class="homepage-shop-alt section grid-container category clearfix ">
+		<div class="section-header grid-100">
+			<h2>${properties.heading}</h2>
+			<p>${properties.subheading}<span>|</span><a class="cta test" href="${properties.linkHref}">${properties.linkLabel}</a>
+			</p>
+			<div class="grid-container slider-module slider-home-product slider-no-dots-padding" data-slick="">
+				<div data-sly-use.multiItems="com.epsilon.aem.citirewards.core.TouchMultiComponent">
+				<div data-sly-list.head="${multiItems.multiFieldItems}">
+					<a data-modal="" data-card-title="" data-card-image="${head.image}" class="grid-25 grid-mobile-50 shop-category omniture-slider-item" href="${head.link}"> <img class="slider-img" src="${head.image}" alt="" /> <span class="slider-category">${head.product}</span> </a>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</section>

@@ -1,0 +1,26 @@
+                    <!-- <section id="offers" class="homepage-offers section clearfix activated">
+                        <div class="offer grid-50 grid-mobile-100 clearfix">
+                            <div class="section-gradient"></div> <img class="offer-image" src="${properties.fileReference}" alt="">
+                            <div class="offer-content">
+                                <h3>${properties.heading}</h3> <a href="${properties.linkHref}">${properties.linkLabel}</a> </div>
+                        </div>
+                        <div class="offer grid-50 grid-mobile-100 clearfix">
+                            <div class="section-gradient"></div> <img class="offer-image" src="${properties.fileReference}" alt="">
+                            <div class="offer-content">
+                                <h3>PROMOTIONS AND PRIVILEGES</h3> <a href="#">Enjoy special offers and privileges all year <span class='nowrap'>round &raquo;</span></a> </div>
+                        </div>
+                    </section>  -->
+                    
+                    <section id="offers" class="homepage-offers section clearfix activated">
+                        <div class="offer grid-50 grid-mobile-100 clearfix">
+							<div data-sly-use.multiItems="com.epsilon.aem.citirewards.core.offersPrivilegesComponent">
+							<div data-sly-list.head1="${multiItems.multiFieldItems}">
+
+								<div class="section-gradient"></div> <img class="offer-image" src="${head1.image}" alt="">
+								<div class="offer-content">
+									<h3>${head1.heading}</h3> <a href="${head1.linkHref}">${head1.linkLabel}</a> 
+								</div>
+							</div>
+							</div>
+						</div>
+				</section>                    

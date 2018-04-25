@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2018-04-24T19:43:05.086+05:30"
+        cq:lastModified="{Date}2018-04-25T19:36:05.439+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/citirewards/settings/wcm/templates/home-page"
         jcr:primaryType="cq:PageContent"
@@ -19,18 +19,76 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="citirewards/components/content/travel"/>
-                <categorytitle
-                    jcr:created="{Date}2018-04-23T20:57:42.111+05:30"
+                <touchmulti
+                    jcr:created="{Date}2018-04-25T17:01:03.272+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2018-04-24T19:43:04.985+05:30"
+                    jcr:lastModified="{Date}2018-04-25T19:36:05.424+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="citirewards/components/content/categorytitle"
-                    fileReference="/content/dam/citi/img/blender.png"
-                    heading="Shop 'til you drop with points."
-                    linkHref="/content/citi"
+                    sling:resourceType="citirewards/components/content/touchmulti"
+                    heading="Bring home your favourite merchandise with points."
+                    linkHref="/content/citirewards/home-page"
                     linkLabel="SEE ALL >>"
-                    subheading="FEATURED CATEGORIES"/>
+                    subheading="FEATURED CATEGORIES">
+                    <products jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/citi/img/blender.png"
+                            link="#"
+                            product="Home"
+                            show="yes"
+                            size="small"
+                            startDate="{Date}2018-04-25T18:20:00.000+05:30"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/citi/img/bigscreen.jpg"
+                            link="#"
+                            product="Electronics"
+                            show="yes"
+                            size="small"
+                            startDate="{Date}2018-04-25T18:21:00.000+05:30"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/citi/img/watch.png"
+                            link="#"
+                            product="Watches"
+                            show="yes"
+                            size="small"
+                            startDate="{Date}2018-04-25T18:21:00.000+05:30"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/citi/img/purse.png"
+                            link="#"
+                            product="Bags and Luggage"
+                            show="yes"
+                            size="small"
+                            startDate="{Date}2018-04-25T18:22:00.000+05:30"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/citi/img/scale.png"
+                            link="#"
+                            product="Well-bing"
+                            show="yes"
+                            size="small"
+                            startDate="{Date}2018-04-25T18:22:00.000+05:30"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/citi/img/duck.png"
+                            link="#"
+                            product="Children"
+                            show="yes"
+                            size="small"
+                            startDate="{Date}2018-04-25T18:23:00.000+05:30"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/citi/img/gift-vouchers.png"
+                            link="#"
+                            product="Vouchers"
+                            show="yes"
+                            size="small"
+                            startDate="{Date}2018-04-25T18:23:00.000+05:30"/>
+                    </products>
+                </touchmulti>
             </responsivegrid>
         </root>
     </jcr:content>
