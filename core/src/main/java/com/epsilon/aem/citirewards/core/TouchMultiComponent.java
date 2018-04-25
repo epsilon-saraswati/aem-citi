@@ -49,7 +49,7 @@ try{
     String startDate;
     String show;
     String size;
-    String imagelink;
+    String image;
  
     //THIS WILL READ THE VALUE OF THE CORAL3 Multifield and set them in a collection 
     while (ni2.hasNext()) {
@@ -66,15 +66,15 @@ try{
         show = grandChild.getProperty("show").getString(); 
         startDate = grandChild.getProperty("startDate").getString();
         size = grandChild.getProperty("size").getString();
-        imagelink = grandChild.getProperty("imagelink").getString();
+        image = grandChild.getProperty("image").getString();
         log.info("*** VALUE OF DATE IS "+startDate);
-        log.info("*** VALUE OF IMAGE IS "+imagelink);
+        log.info("*** VALUE OF IMAGE IS "+image);
         
         menuItem.setProduct(product);
         menuItem.setLink(link);
         menuItem.setShow(show);
         menuItem.setDate(startDate); 
-        menuItem.setImage(imagelink); 
+        menuItem.setImage(image); 
         menuItem.setSize(size); 
         submenuItems.add(menuItem);
     }
